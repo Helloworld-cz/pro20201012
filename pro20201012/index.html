@@ -6,6 +6,32 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <script src="https://s.kcimg.cn/public/idangerous.swiper.min.js"></script>
   <script src=https://s.kcimg.cn/topic/js/global/header.js charset=utf-8></script>
+  <script>
+    var phoneScale = parseInt(window.screen.width) / 750;
+    if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+      if (parseFloat(RegExp.$1) > 2.3) {
+        document.write(
+          '<meta name="viewport" content="width=750, minimum-scale=' +
+          phoneScale +
+          ', maximum-scale=' +
+          phoneScale +
+          ', target-densitydpi=device-dpi" />'
+        );
+      } else {
+        document.write(
+          '<meta name="viewport" content="width=750, target-densitydpi=device-dpi" />'
+        );
+      }
+    } else {
+      document.write(
+        '<meta name="viewport" content="width=750,user-scalable=no, minimum-scale=' +
+        phoneScale +
+        ', maximum-scale=' +
+        phoneScale +
+        '" />'
+      );
+    }
+  </script>
   <title>pro20201012</title>
 </head>
 

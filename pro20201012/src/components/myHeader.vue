@@ -13,11 +13,11 @@
         <a href=http://topic.360che.com/pclist.html>专题活动</a>
       </div>
     </div>
-  </div>  
+  </div>
 </template>
 <script>
 export default {
-  
+
 }
 </script>
 <style scoped>

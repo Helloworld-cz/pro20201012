@@ -5,6 +5,7 @@
           <my-header />
         </el-header>
         <el-main>
+          <container />
         </el-main>
         <el-footer height="">
           <my-footer />
@@ -14,19 +15,22 @@
 </template>
 
 <script>
-import myHeader from './components/myHeader';
-import myFooter from './components/myFooter';
+import myHeader from './components/myHeader'
+import myFooter from './components/myFooter'
+import container from './components/container'
 
 export default {
   name: 'App',
   components: {
     myHeader,
-    myFooter
+    myFooter,
+    container
   }
 }
 </script>
 
 <style>
+@import '../src/assets/css/public';
 /* #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
